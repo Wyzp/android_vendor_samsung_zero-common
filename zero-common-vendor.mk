@@ -26,10 +26,10 @@ endef
 TARGET_DEVICE := $(__PRODUCT_TARGET_NAME)
 
 #
-# Blobs for SM-G92xF
+# Blobs for SM-G92xFD
 #
-ifneq ($(filter zerofltexx zeroltexx,$(TARGET_DEVICE)),)
-    PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/devices/xx)
+ifneq ($(filter zeroflteduo zerolteduo,$(TARGET_DEVICE)),)
+    PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/devices/duo)
 endif
 
 #
