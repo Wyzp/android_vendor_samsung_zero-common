@@ -40,6 +40,13 @@ ifneq ($(filter zerofltespr zeroltespr,$(TARGET_DEVICE)),)
 endif
 
 #
+# Blobs for SM-G92xT/W8
+#
+ifneq ($(filter zerofltecan zeroltecan,$(TARGET_DEVICE)),)
+    PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/devices/can)
+endif
+
+#
 # Blobs for non-SM-G92xP
 #
 ifeq ($(filter zerofltespr zeroltespr,$(TARGET_DEVICE)),)
