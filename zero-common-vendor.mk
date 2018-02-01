@@ -18,5 +18,8 @@
 # include blob-finder
 include vendor/samsung/zero-common/find-vendor-blobs.mk
 
-# Commons blobs
+# common proprietary blobs
 PRODUCT_COPY_FILES += $(call find-vendor-blobs,vendor/samsung/zero-common/proprietary)
+
+# open-source blobs
+PRODUCT_COPY_FILES += $(call find-vendor-blobs,vendor/samsung/zero-common/opensource)
