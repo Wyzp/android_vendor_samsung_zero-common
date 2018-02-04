@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+VENDOR_PATH=vendor/samsung/zero-common
+
 # include blob-finder
 include vendor/samsung/zero-common/find-vendor-blobs.mk
 
@@ -23,3 +25,8 @@ PRODUCT_COPY_FILES += $(call find-vendor-blobs,vendor/samsung/zero-common/propri
 
 # open-source blobs
 PRODUCT_COPY_FILES += $(call find-vendor-blobs,vendor/samsung/zero-common/opensource)
+
+# blobs for apps
+PRODUCT_COPY_FILES += \
+	$(VENDOR_PATH)/system/priv-app/HealthService/lib/arm/libPlatformStrings.so:system/priv-app/HealthService/lib/arm/libPlatformStrings.so \
+	$(VENDOR_PATH)/system/priv-app/HealthService/lib/arm64/libPlatformStrings.so:system/priv-app/HealthService/lib/arm64/libPlatformStrings.so
