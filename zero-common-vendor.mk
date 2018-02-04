@@ -28,5 +28,5 @@ PRODUCT_COPY_FILES += $(call find-vendor-blobs,vendor/samsung/zero-common/openso
 
 # blobs for apps
 PRODUCT_COPY_FILES += \
-	$(VENDOR_PATH)/system/priv-app/HealthService/lib/arm/libPlatformStrings.so:system/priv-app/HealthService/lib/arm/libPlatformStrings.so \
-	$(VENDOR_PATH)/system/priv-app/HealthService/lib/arm64/libPlatformStrings.so:system/priv-app/HealthService/lib/arm64/libPlatformStrings.so
+	$(VENDOR_PATH)/apps/HealthService/lib/arm/libPlatformStrings.so:system/priv-app/HealthService/lib/arm/libPlatformStrings.so \
+	$(VENDOR_PATH)/apps/HealthService/lib/arm64/libPlatformStrings.so:system/priv-app/HealthService/lib/arm64/libPlatformStrings.so
